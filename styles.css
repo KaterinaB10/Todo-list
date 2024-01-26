@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #f0d76b, #f4f0e5, #f0d76b);
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.todo-container {
+  margin: 2em auto;
+  padding: 1em 2em;
+  max-width: 50%;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
