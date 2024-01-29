@@ -17,13 +17,17 @@ body {
 
 .todo-container {
   margin: 2em auto;
-  padding: 1em 2em;
-  max-width: 50%;
+  padding: 1em;
+  max-width: 30%;
   text-align: center;
   background-color: #101010;
   border-radius: 10px;
 }
 
 .todo-container h1 {
+  padding: 0.5em 0;
   background-color: #f0d76b;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
