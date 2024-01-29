@@ -1,28 +1,28 @@
 // Here I will creat a new HTML element that will appear from input
 
-const template = `<div class="lists-container">
-<ul id="display-task">
-<il id="task">
-<input id="task-complete-mark" type="checkbox" />
-<h2>Title</h2>
-<p>Date created</p>
-<p>Date updated</p>
-<button>Delete</button>
-</il>
-</ul>
-</div>
+const template = `<li id="task">
+                <div class="first-row">
+                  <input id="task-complete-mark" type="checkbox" />
+                  <h2>Title</h2>
+                  <button>Delete</button>
+                </div>
+                <div class="second-row">
+                  <p>Date created</p>
+                  <p>Date updated</p>
+                </div>
+              </li>
 `;
 
-export function createTodoElement(todo) {
-  // Create the initial wrapper element
+export function createNewTask(task) {
   const wrapper = document.createElement("li");
 
-  // To change whole template content into nothing
-  document.body.innerHTML = "+ add new task";
+  wrapper.innerHTML = template;
 
-  // Configure that with the content you need
-  wrapper.textContent = todo.title;
+  const title = wrapper.querySelector("h2");
+  title.textContent = task.title;
 
-  // Return the finished HTML Element
-  return wrapper;
+  // const subtitle = wrapper.querySelector("p");
+  // subtitle.textContent = task.body; - I have to find how to add date
+
+  return articleCard;
 }

@@ -12,9 +12,9 @@ export function getAllTodoes() {
 }
 
 // A function for adding a new todo item
-export function createNewTodo(title) {
+export function addTask(title) {
   // Create our new Todo object
-  const newTodo = {
+  const newTask = {
     id: createUniqueId(),
     title: title,
     createdAt: new Date().toISOString(),

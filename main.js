@@ -1,4 +1,4 @@
-import { createNewTodo, getAllTodoes } from "./todoListAPI.js";
+import { addTask, getAllTodoes } from "./todoListAPI.js";
 import * as createTodoElements from "./createTodoElements.js";
 
 // Read user input
@@ -12,7 +12,7 @@ addButton.addEventListener("click", () => {
   // 2. Validate input
   if (title === "") {
     // If the input is empty return
-    return;
+    alert("Please write something");
   }
 
   // 3. Create new todo
@@ -26,7 +26,7 @@ addButton.addEventListener("click", () => {
 });
 
 // Updating the DOM
-const taskList = document.querySelector("#display-task");
+const listContainer = document.querySelector("#display-task");
 
 /**
  * A function for updating the DOM to reflect tasks
@@ -36,13 +36,13 @@ function updateDisplay() {
   const allTodoes = getAllTodoes();
 
   // Clear out the previous elements
-  taskList.innerHTML = "";
+  listContainer.innerHTML = userInput.value;
 
   // Go trough the list of all todoes and
   for (const todo of allTodoes) {
     // Create a new HTML element
     const newElement = createTodoElements.createTodoElement(todo);
     // Insert the new element into the DOM
-    taskList.appendChild(newElement);
+    listContainer.appendChild(ul);
   }
 }
