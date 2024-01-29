@@ -22,6 +22,7 @@ body {
   text-align: center;
   background-color: #101010;
   border-radius: 10px;
+  box-shadow: 0 0 0.2em #10101015;
 }
 
 .todo-container h1 {

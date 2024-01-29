@@ -21,6 +21,9 @@ export function addTask(title) {
     updatedAt: new Date().toISOString(),
   };
 
+  todoes.push(newTask);
+  console.log("Todo added:", newTask);
+
   // A function for regulation quantity of items in the list
   // if (todoes.length < 10) {
   //   todoes.push(newTodo);
