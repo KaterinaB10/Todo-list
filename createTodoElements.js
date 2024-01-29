@@ -1,11 +1,7 @@
 // Here I will creat a new HTML element that will appear from input
 
 const template = `<li id="task">
-                <div class="first-row">
-                  <input id="task-complete-mark" type="checkbox" />
                   <h2>Title</h2>
-                  <button>Delete</button>
-                </div>
                 <div class="second-row">
                   <p>Date created</p>
                   <p>Date updated</p>
