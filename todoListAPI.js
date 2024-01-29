@@ -22,14 +22,14 @@ export function addTask(title) {
   };
 
   // A function for regulation quantity of items in the list
-  if (todoes.length < 10) {
-    todoes.push(newTodo);
-    console.log("Todo added:", newTodo);
-  } else {
-    console.log(
-      "You can not add more tasks. Please delete some of existed ones."
-    );
-  }
+  // if (todoes.length < 10) {
+  //   todoes.push(newTodo);
+  //   console.log("Todo added:", newTodo);
+  // } else {
+  //   console.log(
+  //     "You can not add more tasks. Please delete some of existed ones."
+  //   );
+  // } - I need to check it
 }
 
 // Creating id of task
