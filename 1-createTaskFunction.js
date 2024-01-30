@@ -10,7 +10,7 @@ const template = `<li id="task">
                   id="task-checkbox"
                   class="checkbox"
                 />
-                <label for="task-checkbox" class="task-label">Title</label>
+                <label for="task-checkbox" class="taskLabel">Title</label>
               </div>
               <div class="control-btns">
                 <button class="editBtn">
@@ -34,7 +34,7 @@ export function createNewTask(data) {
 
   wrapper.innerHTML = template;
 
-  const title = wrapper.querySelector("label");
+  const title = wrapper.querySelector(".taskLabel");
   title.textContent = data.title; //title.textContent because I take title from previouse line "const title ="
 
   const editBtn = wrapper.querySelector(".editBtn");

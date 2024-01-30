@@ -113,13 +113,13 @@ Tasks container
   opacity: 0;
 }
 
-.task-label {
+.taskLabel {
   position: relative;
   cursor: pointer;
   margin-left: 1em;
 }
 
-.task-label::before {
+.taskLabel::before {
   content: "";
   position: absolute;
   top: 0;
@@ -130,7 +130,7 @@ Tasks container
   border: 1.5px solid #f0d76b;
 }
 
-.task-label::after {
+.taskLabel::after {
   content: "";
   position: absolute;
   top: 5.5px;
@@ -142,11 +142,11 @@ Tasks container
   transition: 0.2s ease;
 }
 
-.checkbox:not(:checked) + .task-label::after {
+.checkbox:not(:checked) + .taskLabel::after {
   opacity: 0;
 }
 
-.checkbox:checked + .task-label {
+.checkbox:checked + .taskLabel {
   text-decoration: line-through;
 }
 

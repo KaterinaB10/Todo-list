@@ -1,42 +1,38 @@
-/**
- * Inside this Module we collect all of our variables
- * and functions associated with our Todo List
- */
+/*Collection of all of variables and functions associated with Todo List*/
 
 // The list of all of our Todoes
 const todoes = [];
 
-// A function for getting all of our Todoes
+// A function for getting all of Todoes
 export function getAllTodoes() {
   return todoes;
 }
 
-// A function for adding a new todo item
+// I creating a function for adding a new todo item (task) --> data from createTaskFunction
+// I have to create this function for write which things in data will be changed + adding max-length
 export function addTask(title) {
   // Create our new Todo object
   const newTask = {
     id: createUniqueId(),
     title: title,
-    createdAt: new Date().toISOString(),
-    updatedAt: new Date().toISOString(),
+    LastUpdatedAt: new Intl.RelativeTimeFormat("en"),
   };
 
   // todoes.push(newTask);
-  // console.log("Todo added:", newTask);
 
   // A function for regulation quantity of items in the list
-  if (todoes.length < 2) {
+  if (todoes.length < 5) {
     todoes.push(newTask);
     console.log("Todo added:", newTask);
   } else {
+    alert("You can not add more tasks. Please delete some of existed ones.");
     console.log(
       "You can not add more tasks. Please delete some of existed ones."
     );
-  } // - I need to check it
+  }
 }
 
-// Creating id of task
-
+// Creating id of task - Why???
 let currentId = 0;
 
 function createUniqueId() {
