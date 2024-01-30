@@ -40,7 +40,7 @@ h1 {
   color: #f0d76b;
 }
 
-h2 {
+label {
   margin-left: 0.5em;
   font-weight: 400;
   font-size: 1.25rem;
@@ -107,6 +107,47 @@ Tasks container
 .row-1 {
   justify-content: space-between;
   padding-top: 0.5em;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.task-label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.task-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -32px;
+  width: 20px;
+  height: 20px;
+  border-radius: 60px;
+  border: 1.5px solid #f0d76b;
+}
+
+.task-label::after {
+  content: "";
+  position: absolute;
+  top: 5.5px;
+  left: -26.5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 60px;
+  background-color: #f0d76b;
+  transition: 0.2s ease;
+}
+
+.checkbox:not(:checked) + .task-label::after {
+  opacity: 0;
+}
+
+.checkbox:checked + .task-label {
+  text-decoration: line-through;
 }
 
 .control-btns button {
