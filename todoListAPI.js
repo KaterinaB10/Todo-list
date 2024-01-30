@@ -21,18 +21,18 @@ export function addTask(title) {
     updatedAt: new Date().toISOString(),
   };
 
-  todoes.push(newTask);
-  console.log("Todo added:", newTask);
+  // todoes.push(newTask);
+  // console.log("Todo added:", newTask);
 
   // A function for regulation quantity of items in the list
-  // if (todoes.length < 10) {
-  //   todoes.push(newTodo);
-  //   console.log("Todo added:", newTodo);
-  // } else {
-  //   console.log(
-  //     "You can not add more tasks. Please delete some of existed ones."
-  //   );
-  // } - I need to check it
+  if (todoes.length < 2) {
+    todoes.push(newTask);
+    console.log("Todo added:", newTask);
+  } else {
+    console.log(
+      "You can not add more tasks. Please delete some of existed ones."
+    );
+  } // - I need to check it
 }
 
 // Creating id of task

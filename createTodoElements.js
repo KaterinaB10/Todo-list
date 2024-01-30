@@ -20,5 +20,5 @@ export function createNewTask(task) {
   // const subtitle = wrapper.querySelector("p");
   // subtitle.textContent = task.body; - I have to find how to add date
 
-  return articleCard;
+  return wrapper;
 }

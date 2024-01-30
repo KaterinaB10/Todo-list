@@ -1,3 +1,14 @@
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Inder', sans-serif;
+font-family: 'Lilita One', sans-serif; ---> main fonts
+#101010, #F4F0E5, #F0D76B, #191919 ---> main colors
+*/
+
+/*
+Layout
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +16,63 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #f0d76b, #f4f0e5, #f0d76b);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inder", sans-serif;
   color: #101010;
+  background-color: #101010;
 }
 
-.container {
+.todo-container {
   max-width: 100%;
   max-height: 100vh;
+  padding: 2em 1.5em;
 }
+
+/*
+Typography
+*/
+
+h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f0d76b;
+}
+
+/*
+Form
+*/
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6em 1em;
+}
+
+.input-box {
+  /* width: 60%; */
+  padding: 0.5em 0.8em;
+  background-color: #191919;
+  border-radius: 60px;
+  border: 1px solid #f0d76b;
+  outline: none;
+  color: #f0d76b;
+  font-weight: 600;
+}
+
+.input-box::placeholder {
+  display: none;
+}
+
+.add-button {
+  padding: 0.5em 0.5em;
+  border-radius: 60px;
+  background-color: #f0d76b;
+  border: none;
+  display: flex;
+}
+
+/* Maybe I will need it:
 
 .todo-container {
   margin: 2em auto;
@@ -33,28 +92,12 @@ body {
   font-weight: 700;
 }
 
-#input-box {
-  width: 70%;
-  margin: 2em auto;
-  padding: 0.5em 1em;
-  background-color: #3c3c3c;
-  border-radius: 60px;
-  border: none;
-  outline: none;
-  color: #f0d76b;
-  font-weight: 600;
-}
 
-#input-box::placeholder {
-  color: #101010;
-  font-weight: 600;
-}
+
+
 
 #add-task-btn {
-  padding: 0.5em 1em;
-  border-radius: 60px;
-  background-color: #f0d76b;
-  border: none;
+ 
   color: #101010;
   font-weight: 600;
   text-transform: uppercase;
@@ -98,4 +141,4 @@ h2 {
   padding: 1em;
   border: 2px solid #101010;
   border-radius: 100px;
-}
+} */

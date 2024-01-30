@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Inder&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -14,18 +22,19 @@
     <title>Todo list</title>
   </head>
   <body>
-    <div class="container">
-      <div class="todo-container">
-        <!-- Header of todo-list -->
-        <h1>Todo-list</h1>
-        <div class="row">
-          <input id="input-box" type="text" placeholder="+ write your task" />
-          <button id="add-task-btn">Add task</button>
-
-          <!-- Will be used in JS -->
-          <div class="lists-container">
-            <ul id="display-task">
-              <!-- <li id="task">
+    <div class="todo-container">
+      <!-- Header of todo-list -->
+      <h1>My today’s tasks</h1>
+      <div class="form-field">
+        <input class="input-box" id="input-box" type="text" />
+        <button class="add-button" id="add-task-btn">
+          <img src="./Images/plus-icon.png" alt="Icon that shows plus sign" />
+        </button>
+      </div>
+      <!-- Will be used in JS -->
+      <div class="lists-container">
+        <ul id="display-task">
+          <!-- <li id="task">
                 <div class="first-row">
                   <input id="task-complete-mark" type="checkbox" />
                   <h2>Title</h2>
@@ -36,11 +45,9 @@
                   <p>Date updated</p>
                 </div>
               </li> -->
-            </ul>
-          </div>
-          <!-- Will be used in JS -->
-        </div>
+        </ul>
       </div>
+      <!-- Will be used in JS -->
     </div>
   </body>
 </html>
