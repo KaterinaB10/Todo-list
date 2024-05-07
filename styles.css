@@ -74,6 +74,12 @@ Form
   font-weight: 600;
 }
 
+@media (min-width: 450px) {
+  .input-box {
+    width: 90%;
+  }
+}
+
 .input-box::placeholder {
   display: none;
 }

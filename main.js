@@ -5,6 +5,8 @@ import { addTask, getAllTodoes } from "./2-todoAPI.js";
 // Read user input
 const userInput = document.querySelector("#input-box");
 const addButton = document.querySelector("#add-task-btn");
+const deleteBtn = document.querySelectorAll(".deleteBtn");
+const checkbox = document.querySelectorAll(".checkbox");
 
 addButton.addEventListener("click", () => {
   // 1. Read text input
@@ -48,3 +50,17 @@ function updateDisplay() {
     listContainer.appendChild(newElement);
   }
 }
+
+/**
+ * A function for deleting tasks
+ */
+
+// deleteBtn.addEventListener("click", () => {
+//   userInput.this.remove();
+//   updateDisplay();
+// });
+
+// checkbox.addEventListener("click", () => {
+//   newElement.classList.add(".taskLabelClicked");
+//   updateDisplay();
+// });
