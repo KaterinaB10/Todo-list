@@ -32,7 +32,7 @@ export function addTask(title) {
   }
 }
 
-// Creating id of task - Why???
+// Creating id of task
 let currentId = 0;
 
 function createUniqueId() {
